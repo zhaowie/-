@@ -1,8 +1,15 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
-    <h2>Essential Links</h2>
-    <h1>主界面</h1>
+    <ul>
+      <li><router-link to="/home">主页</router-link></li>
+      <li><router-link to="/user">设计</router-link></li>
+      <li><router-link to="/panduan">判断</router-link></li>
+      <li><router-link to="/shenhe">审核</router-link></li>
+      <li><router-link to="/juece">决策</router-link></li>
+    </ul>
+    <transition enter-active-class="zoomInLeft" leave-active-class="zoomOutRight">
+       <router-view class="animated"/>
+    </transition>
   </div>
 </template>
 
@@ -11,7 +18,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      
     }
   }
 }
