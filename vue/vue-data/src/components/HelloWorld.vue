@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
-    <h1>虾扯蛋</h1>
+    <h1>主界面</h1>
   </div>
 </template>
 
